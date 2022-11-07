@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="392EE606-A90D-B3CC-4E9A-DD3A848D5E21" name="users">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:40:51 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="BA7FC08A-25FA-D4EF-572D-D6CC37066767">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:47:36 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_name" id="AD224208-F4D8-6A1F-E8A1-57F0E133C279">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:47:36 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_password" id="78641129-5047-B1EE-4594-A227677A5448">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:47:36 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="59E05781-15C7-F492-A68A-8459606B8D11">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:47:36 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_address" id="D1FC64C3-6DC5-4F97-9256-CD5A4C606C60">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:16:48 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_type" id="5146627E-794F-D2B6-FBBF-2AA90FEEB9F5">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-22 10:07:24 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6BD4AD61-BD94-2782-E234-79B283DBCA3E" name="users_PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:47:36 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA7FC08A-25FA-D4EF-572D-D6CC37066767"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E13EEB9B-B737-97DA-1910-0183B9C63826" name="users__UN">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:15:01 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59E05781-15C7-F492-A68A-8459606B8D11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

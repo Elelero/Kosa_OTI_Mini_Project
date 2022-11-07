@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1AD31E27-2119-8257-1AE0-8E9C9E2589D9" name="orders">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:41:27 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orders_id" id="41E560C0-37C1-4A91-AF88-AF3844ABAFBF">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:05:55 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orders_date" id="1D7EDD3F-9B46-328D-C7F8-EF51F6769328">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:05:55 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="AD689B59-524F-3911-0DE7-7E74B52ABD3B">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:07:54 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="178B9766-A36F-4E0D-478D-6C7454201B14" referredColumn="BA7FC08A-25FA-D4EF-572D-D6CC37066767"/>
+</associations>
+</Column>
+<Column name="orders_is_deleted" id="813487D8-2DC0-86CF-61EE-AE0BCFAEE0B0">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-21 08:07:05 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_price" id="8158A941-E5D0-A83A-90EE-9F26DE0EE2A4">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-21 08:07:53 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="B1996948-D361-3B22-8545-FE4894D7DDBF">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-21 08:11:43 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="56C0224F-E18F-89C9-9227-91327F7B8228" name="orders_PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:05:55 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41E560C0-37C1-4A91-AF88-AF3844ABAFBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D02CDB23-41C5-0E0A-8006-B7EED1D6E7C4" name="orders_users_FK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:07:54 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD689B59-524F-3911-0DE7-7E74B52ABD3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

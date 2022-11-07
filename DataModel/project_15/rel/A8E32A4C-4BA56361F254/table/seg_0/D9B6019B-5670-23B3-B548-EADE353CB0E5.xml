@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9B6019B-5670-23B3-B548-EADE353CB0E5" name="cart_detail">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-21 08:16:05 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_id" id="7E3CA5CF-4EF9-6B36-E830-F5AC2927577B">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-21 08:16:05 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D817204B-F9D2-B4E7-1C7A-9C37BA024C02" referredColumn="65C086E0-3B27-F4E1-8F64-6C4907AA7231"/>
+</associations>
+</Column>
+<Column name="quantity" id="7B4E366F-FBB7-7B1E-B64C-40221A6645CE">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-21 08:16:05 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="0FE0E39D-2CAD-F5FA-1510-DB5D219DDB59">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 09:36:45 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65FB683C-1C99-F6D9-A194-20FBF934A40D" referredColumn="E1D58182-618F-2B30-61A8-20036E558F5E"/>
+</associations>
+</Column>
+<Column name="size_id" id="AFF36B13-D3B4-0891-B6FF-2F150A060419">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-30 11:09:18 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="color_id" id="5E79BBD6-0948-4010-D4A2-6273BFBD9ED0">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-30 11:09:30 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cart_detail_id" id="AF896DDF-289B-0FBC-4811-19EF1B47423A">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-31 06:15:08 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2B8B358-40BE-CD4F-4B75-DD95B5E21B40" name="cart_detail_PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-21 08:16:05 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF896DDF-289B-0FBC-4811-19EF1B47423A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D303334-BBD6-0434-32EB-F49DD3354103" name="cart_detail_cart_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:16:57 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FE0E39D-2CAD-F5FA-1510-DB5D219DDB59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="621085B9-376A-4BCD-4B1B-02ED3A9B8D4A" name="cart_detail_product_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:17:34 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E3CA5CF-4EF9-6B36-E830-F5AC2927577B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

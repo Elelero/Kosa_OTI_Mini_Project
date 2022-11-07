@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96C604B3-18F0-7C63-50B4-D6660E15FA3D" name="cart">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-21 08:15:03 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="total_price" id="64EF7F55-B803-06D2-F8FB-F3944D79BF14">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-21 08:15:03 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_quantity" id="9E0CDD90-C0DE-2EC9-67E0-19502B72C42B">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-21 08:15:03 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="E1D58182-618F-2B30-61A8-20036E558F5E">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 09:36:45 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64E21460-2E7C-43C5-3E87-C9E886AF21D2" referredColumn="BA7FC08A-25FA-D4EF-572D-D6CC37066767"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="51101CAE-520B-81E8-1CDE-21F911CCFE5E" name="cart_PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-21 08:15:03 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1D58182-618F-2B30-61A8-20036E558F5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3AA428B-5175-6A18-41A7-FF9ECA74E372" name="cart_users_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:36:16 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1D58182-618F-2B30-61A8-20036E558F5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

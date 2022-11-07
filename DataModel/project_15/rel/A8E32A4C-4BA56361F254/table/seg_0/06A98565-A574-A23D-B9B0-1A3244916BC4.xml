@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="06A98565-A574-A23D-B9B0-1A3244916BC4" name="reply">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-22 09:48:45 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="reply_id" id="BA15C403-377B-DFBE-E900-77906D7E65A1">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-22 09:52:35 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reply_content" id="ACD80524-E2BD-0083-1B99-539A60E48DD1">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 11:00:29 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>900</dataTypeSize>
+<ownDataTypeParameters>900,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="B8175806-5265-BBCD-6154-E3AF186793B7">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:20:17 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="551BC588-52B6-773F-EF27-72F0B2B33BB3" referredColumn="BA7FC08A-25FA-D4EF-572D-D6CC37066767"/>
+</associations>
+</Column>
+<Column name="review_id" id="7349B805-2FC8-C0C8-F234-2FC89F62B8BC">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:21:43 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="118AAEA1-7EF4-5344-4B62-CD99983A55E2" referredColumn="7C6FF4E4-C68D-16D1-0B6C-353EC3B6F672"/>
+</associations>
+</Column>
+<Column name="qna_id" id="F4B5A179-5874-8C9E-BF4F-141CBC6A4C10">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:23:07 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59BCAC12-1110-6F80-741D-980BB65129D4" referredColumn="99BF3CD5-4849-C8EF-67EE-789DD042D2B7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7315EFD3-B15D-699D-60E8-F053BE28A56A" name="reply_PK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-22 09:52:35 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA15C403-377B-DFBE-E900-77906D7E65A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE06EB7A-DA31-05D4-8B71-B24164E23A25" name="reply_users_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:20:17 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8175806-5265-BBCD-6154-E3AF186793B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69C09C06-A069-1C97-3A75-7A134686AAAA" name="reply_review_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:21:43 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7349B805-2FC8-C0C8-F234-2FC89F62B8BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69A40B43-3715-218F-FA3E-DDB9B5006BB1" name="reply_qna_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:23:07 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4B5A179-5874-8C9E-BF4F-141CBC6A4C10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

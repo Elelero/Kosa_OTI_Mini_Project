@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2269027C-AAEB-BD45-A78E-FA8D4204E7C6" name="product">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:41:18 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_id" id="65C086E0-3B27-F4E1-8F64-6C4907AA7231">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:51:32 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_name" id="8C4487C4-6CEC-936A-A7A2-C3E278581073">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:51:32 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_price" id="2DD31D7E-E038-8B54-573E-FE46F346BF79">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:52:03 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<constraintName>pprice_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="category_id" id="3C62288B-CD4C-E5CA-5234-5045E3DA02D6">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 11:33:08 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1180E26-1E0D-071C-13B6-C4DE195D5627" referredColumn="E038CACB-7656-92F7-96E9-ED4F263BC426"/>
+</associations>
+</Column>
+<Column name="product_sex" id="03ADEDD7-1612-C006-AEAE-CEF30B72E5E9">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:08:38 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_id" id="6015C5F3-0735-BBD7-7926-CCC2F8DC68F5">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-29 16:08:52 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD6A935D-A967-581D-E2D5-0373872EEADD" referredColumn="528FFAC6-451E-FCC7-FD62-A64D7A7021EA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0DA6AFB-AA2E-6C59-D78D-ED7E4EE664F1" name="product_PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:51:32 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65C086E0-3B27-F4E1-8F64-6C4907AA7231"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A51BDE8-92D4-5526-86D5-2E6C242395D7" name="product__UN">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 10:24:54 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C4487C4-6CEC-936A-A7A2-C3E278581073"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31BE4D46-706E-70BA-04E5-E44AC8BAA078" name="product_catagory_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 11:33:08 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C62288B-CD4C-E5CA-5234-5045E3DA02D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8EE2E26-682F-4F42-0C19-C95AC95A3C7C" name="product_company_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-29 16:08:52 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6015C5F3-0735-BBD7-7926-CCC2F8DC68F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EDF1C306-2138-DE0D-FD20-398F56F860F0" name="product_color">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-29 16:09:18 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="color_id" id="74B4B054-E174-8251-149F-174E75173A8F">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-29 16:09:46 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC0D97E7-CD5E-9F5B-4043-FFA03766C56C" referredColumn="5DDBF98B-642D-124F-AC30-C5538F3FA4D9"/>
+</associations>
+</Column>
+<Column name="product_id" id="BA377574-2585-7343-8AD8-88B27E9BA8B1">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-29 16:10:03 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEB1047C-6635-7DDD-8FB1-17D3B4C9029B" referredColumn="65C086E0-3B27-F4E1-8F64-6C4907AA7231"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2370972-6D1C-3F8D-570A-5E435CD2F19A" name="product_color_PK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-29 16:09:46 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74B4B054-E174-8251-149F-174E75173A8F"/>
+<colUsage columnID="BA377574-2585-7343-8AD8-88B27E9BA8B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E642A5C-2BDE-A4C3-BF81-49F167A63850" name="product_color_color_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-29 16:10:29 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74B4B054-E174-8251-149F-174E75173A8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E20E76E-75B0-2D0C-DD96-7C4C35DB57BA" name="product_color_product_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-29 16:10:50 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA377574-2585-7343-8AD8-88B27E9BA8B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

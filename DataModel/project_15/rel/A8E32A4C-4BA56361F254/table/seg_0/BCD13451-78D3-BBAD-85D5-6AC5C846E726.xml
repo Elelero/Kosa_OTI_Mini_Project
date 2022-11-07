@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BCD13451-78D3-BBAD-85D5-6AC5C846E726" name="company">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 09:02:17 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="company_id" id="528FFAC6-451E-FCC7-FD62-A64D7A7021EA">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 09:03:27 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_name" id="EAE46408-B280-83A7-9029-D20C61763C9F">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 09:03:27 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9DAA43DB-410E-FA2F-8697-7D4E701F3458" name="company_PK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 09:03:27 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="528FFAC6-451E-FCC7-FD62-A64D7A7021EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="891F427A-CA1F-41A8-6F06-FE43505424A2" name="company__UN">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 09:04:54 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAE46408-B280-83A7-9029-D20C61763C9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="33C62B83-6C73-F120-CCC4-7A436DEE1FB2" name="users">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:19:32 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<engineerTo>
+<item key="A8E32A4C-7553-AC68-5FED-4BA56361F254" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="userid" id="415E6D0F-6E79-280F-AC53-3AFC9EDC8A13">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:23:43 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<engineerTo>
+<item key="A8E32A4C-7553-AC68-5FED-4BA56361F254" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="username" id="45845D8F-2523-3381-2693-D056F0E23A53">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:24:00 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<engineerTo>
+<item key="A8E32A4C-7553-AC68-5FED-4BA56361F254" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="userpassword" id="7D3241D0-3925-FCAB-B2D9-A52B410BC374">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:24:49 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<engineerTo>
+<item key="A8E32A4C-7553-AC68-5FED-4BA56361F254" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usertel" id="B42D7A4F-C9F4-BAD2-2FD6-F0A0A225FD7A">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:24:57 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<engineerTo>
+<item key="A8E32A4C-7553-AC68-5FED-4BA56361F254" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="useraddr" id="4CBE3217-34D1-E61A-332C-C4AD6C3206EC">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:25:08 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<engineerTo>
+<item key="A8E32A4C-7553-AC68-5FED-4BA56361F254" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F9559592-8A07-DC5D-EE57-32DB72D7D25B" name="users PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 05:35:39 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<engineerTo>
+<item key="A8E32A4C-7553-AC68-5FED-4BA56361F254" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>415E6D0F-6E79-280F-AC53-3AFC9EDC8A13</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9FEFF49-62EF-E0C1-9E7A-F502B30FF1A4" name="review">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-22 09:55:36 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="review_id" id="7C6FF4E4-C68D-16D1-0B6C-353EC3B6F672">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-22 10:00:56 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_title" id="1B607BF7-69C0-DCD4-F006-A551549DCAC7">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 10:51:26 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_content" id="57ADA123-4BB7-8241-72FB-CEAA765BDE36">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 10:52:07 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000</dataTypeSize>
+<ownDataTypeParameters>3000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_date" id="9A12EFF0-AEA0-2903-3E00-17C31562081E">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 10:58:26 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="BDEB6AC0-A25D-D720-EB15-91A89E2C9830">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 11:03:17 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BFEB1C0B-EEFB-4580-EB41-E14FE008A35C" referredColumn="BA7FC08A-25FA-D4EF-572D-D6CC37066767"/>
+</associations>
+</Column>
+<Column name="star_score" id="B2C42A5F-CB4E-5BB6-AE63-97C3A4974F62">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 11:19:01 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="heart_count" id="AEDB2AA6-C6A1-D2CF-80B6-829BD8C1A9C1">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 11:19:27 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_id" id="2993BEA5-CB17-89E6-12CB-1C3FB1D3E891">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:19:09 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83DD6057-5654-0303-F728-D82358594DBA" referredColumn="65C086E0-3B27-F4E1-8F64-6C4907AA7231"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4FE7078B-61C2-A09E-9D22-3DB98C605F10" name="review_PK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-22 10:00:56 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C6FF4E4-C68D-16D1-0B6C-353EC3B6F672"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BB534EE-228F-3EE7-13EA-40F80C763719" name="review_users_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 11:03:17 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDEB6AC0-A25D-D720-EB15-91A89E2C9830"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EC8E62A-9087-9248-C90C-10D3F647BC82" name="review_product_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:19:09 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2993BEA5-CB17-89E6-12CB-1C3FB1D3E891"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

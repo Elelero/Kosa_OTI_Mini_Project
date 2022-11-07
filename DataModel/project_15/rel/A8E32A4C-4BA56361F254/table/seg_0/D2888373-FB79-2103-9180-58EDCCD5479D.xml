@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2888373-FB79-2103-9180-58EDCCD5479D" name="qna">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-22 09:48:09 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="qna_id" id="99BF3CD5-4849-C8EF-67EE-789DD042D2B7">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-22 09:53:10 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qna_title" id="665BFE41-CBF7-8695-B578-2DFD91EFE6C7">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 11:01:22 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qna_content" id="384E3AD6-2CAA-18AF-CEA7-61C3FCC89E05">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 11:02:04 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000</dataTypeSize>
+<ownDataTypeParameters>3000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qna_date" id="14D1A9EF-E741-6892-08E6-4B3D3AA44516">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-23 11:02:43 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_id" id="1B31AE27-BFB2-9A53-3C74-901C60422230">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:24:04 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="089E5A30-64C5-835A-566B-DC851CC83150" referredColumn="65C086E0-3B27-F4E1-8F64-6C4907AA7231"/>
+</associations>
+</Column>
+<Column name="user_id" id="542DC833-45ED-C4DA-4EDE-C47373817890">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:25:58 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D9565E4-9453-A5AE-C3A7-DD8B60BB2100" referredColumn="BA7FC08A-25FA-D4EF-572D-D6CC37066767"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="359F68EB-016A-1A41-6CD6-0E491BD0A0D6" name="qna_PK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-22 09:53:10 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99BF3CD5-4849-C8EF-67EE-789DD042D2B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="036AD96E-F5A7-B6AE-0307-14966B184EA4" name="qna_product_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:24:04 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B31AE27-BFB2-9A53-3C74-901C60422230"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B05BE9F-E34C-5D95-8854-CEA63C139C3A" name="qna_users_FK">
+<createdBy>USER</createdBy>
+<createdTime>2022-10-24 12:25:58 UTC</createdTime>
+<ownerDesignName>project_15</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="542DC833-45ED-C4DA-4EDE-C47373817890"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

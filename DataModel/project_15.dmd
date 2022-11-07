@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="project_15" id="5C1633BD-4AD2-7DC6-1B02-8F7FD6F66935" version="3.5">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 00:23:58 UTC</createdTime>
+<ownerDesignName>gkgk</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5C1633BD-4AD2-7DC6-1B02-8F7FD6F66935</designId>
+</OSDM_Design>
